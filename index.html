@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+	<style>
+    body{
+      background-color:red;
+    }
+ </style>
+	
+</head>
+<body>
+    
+    <h2>JavaScript:Arrays </h2> <br>
+<h3>1. Write a program to sort a JavaScript Array. <br>
+
+2. Write a program to concatenate two array elements and store them in new array. <br>
+
+3. Write a program to remove first element from JavaScript Array.</h3> <br>
+    
+	
+<script>
+        
+//Question 1
+let numbers = [2, 2, 4, 0, 1, 5];
+numbers.sort(function(a, b) {
+  return a - b;
+});
+
+document.writeln("1.)Sorted array:", numbers);
+
+//Question 2
+let array1 = [0, 1, 2];
+let array2 = [3, 4, 5];
+let newArray = array1.concat(array2);
+
+document.writeln("<br>2.)Combined Array:",newArray);
+
+
+
+//Question 3
+let fruits = ["apple", "banana", "cherry", "date"];
+
+let removedElement = fruits.shift();// shift method removes the first aaray
+
+document.writeln("<br>3.) Array:", fruits);
+document.writeln("<br>3.Removed Array:", removedElement);
+
+    </script>
+</body>
+</html>
